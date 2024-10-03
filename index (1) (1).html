@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .section { display: none; } /* Esconde todas as seções inicialmente */
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Pokedex</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showSection('inicio')">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showSection('pokemons')">Pokémons</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showSection('tipos')">Tipos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showSection('regioes')">Regiões</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showSection('treinador')">Treinador</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showSection('cadastrar')">Cadastrar Pokémon</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Seções -->
+    <div id="inicio" class="section">
+        <h1 class="text-center mt-5">Bem-vindo à Pokedex</h1>
+        <div class="text-center">
+            <img src="https://i.etsystatic.com/27528444/r/il/cf3a6b/4962592916/il_570xN.4962592916_ayt7.jpg" alt="Pokedex Johto" class="img-fluid">
+            <p class="mt-3">A Pokédex é uma enciclopédia virtual que contém informações sobre os Pokémon da região de Johto.</p>
+        </div>
+    </div>
+
+    <div id="pokemons" class="section">
+        <h2 class="text-center mt-5">Pokémons da Região de Johto</h2>
+        <div class="row" id="lista-pokemons">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/152.svg" class="card-img-top" alt="Chikorita" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0152 Chikorita</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/153.svg" class="card-img-top" alt="Bayleef" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0153 Bayleef</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/154.svg" class="card-img-top" alt="Meganium" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0154 Meganium</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/155.svg" class="card-img-top" alt="Cyndaquil" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0155 Cyndaquil</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/156.svg" class="card-img-top" alt="Quilava" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0156 Quilava</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/157.svg" class="card-img-top" alt="Typhlosion" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0157 Typhlosion</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/158.svg" class="card-img-top" alt="Totodile" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0158 Totodile</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/159.svg" class="card-img-top" alt="Croconaw" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0159 Croconaw</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/160.svg" class="card-img-top" alt="Feraligatr" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0160 Feraligatr</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/161.svg" class="card-img-top" alt="Sentret" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0161 Sentret</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/162.svg" class="card-img-top" alt="Furret" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0162 Furret</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/163.svg" class="card-img-top" alt="Hoothoot" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0163 Hoothoot</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/164.svg" class="card-img-top" alt="Noctowl" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0164 Noctowl</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/165.svg" class="card-img-top" alt="Ledyba" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0165 Ledyba</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/166.svg" class="card-img-top" alt="Ledian" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0166 Ledian</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/167.svg" class="card-img-top" alt="Spinarak" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0167 Spinarak</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/168.svg" class="card-img-top" alt="Ariados" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0168 Ariados</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/169.svg" class="card-img-top" alt="Crobat" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0169 Crobat</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/170.svg" class="card-img-top" alt="Chinchou" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0170 Chinchou</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/171.svg" class="card-img-top" alt="Lanturn" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0171 Lanturn</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/172.svg" class="card-img-top" alt="Pichu" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0172 Pichu</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/173.svg" class="card-img-top" alt="Cleffa" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0173 Cleffa</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/174.svg" class="card-img-top" alt="Igglybuff" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0174 Igglybuff</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/175.svg" class="card-img-top" alt="Togepi" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0175 Togepi</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/176.svg" class="card-img-top" alt="Togetic" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0176 Togetic</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/177.svg" class="card-img-top" alt="Natu" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0177 Natu</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/178.svg" class="card-img-top" alt="Xatu" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0178 Xatu</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/179.svg" class="card-img-top" alt="Mareep" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0179 Mareep</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/180.svg" class="card-img-top" alt="Flaaffy" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0180 Flaaffy</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/181.svg" class="card-img-top" alt="Ampharos" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0181 Ampharos</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/182.svg" class="card-img-top" alt="Bellossom" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0182 Bellossom</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/183.svg" class="card-img-top" alt="Marill" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0183 Marill</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/184.svg" class="card-img-top" alt="Azumarill" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0184 Azumarill</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/185.svg" class="card-img-top" alt="Sudowoodo" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0185 Sudowoodo</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/186.svg" class="card-img-top" alt="Politoed" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0186 Politoed</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/187.svg" class="card-img-top" alt="Hoppip" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0187 Hoppip</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/188.svg" class="card-img-top" alt="Skiploom" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0188 Skiploom</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/189.svg" class="card-img-top" alt="Jumpluff" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0189 Jumpluff</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/190.svg" class="card-img-top" alt="Aipom" style="width:100%; height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">#0190 Aipom</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/191.svg" class="card-img-top" alt="Sunkern" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0191 Sunkern</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/192.svg" class="card-img-top" alt="Sunflora" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0192 Sunflora</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/193.svg" class="card-img-top" alt="Yanma" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0193 Yanma</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/194.svg" class="card-img-top" alt="Wooper" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0194 Wooper</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/195.svg" class="card-img-top" alt="Quagsire" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0195 Quagsire</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/196.svg" class="card-img-top" alt="Espeon" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0196 Espeon</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/197.svg" class="card-img-top" alt="Umbreon" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0197 Umbreon</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/198.svg" class="card-img-top" alt="Murkrow" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0198 Murkrow</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/199.svg" class="card-img-top" alt="Slowking" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0199 Slowking</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/200.svg" class="card-img-top" alt="Misdreavus" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0200 Misdreavus</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/201.svg" class="card-img-top" alt="Unown" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0201 Unown</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/202.svg" class="card-img-top" alt="Wobbuffet" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0202 Wobbuffet</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/203.svg" class="card-img-top" alt="Girafarig" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0203 Girafarig</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/204.svg" class="card-img-top" alt="Pineco" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0204 Pineco</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/205.svg" class="card-img-top" alt="Forretress" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0205 Forretress</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/206.svg" class="card-img-top" alt="Dunsparce" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0206 Dunsparce</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/207.svg" class="card-img-top" alt="Gligar" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0207 Gligar</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/208.svg" class="card-img-top" alt="Steelix" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0208 Steelix</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/209.svg" class="card-img-top" alt="Snubbull" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0209 Snubbull</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/210.svg" class="card-img-top" alt="Granbull" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0210 Granbull</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/211.svg" class="card-img-top" alt="Qwilfish" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0211 Qwilfish</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/212.svg" class="card-img-top" alt="Scizor" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0212 Scizor</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/213.svg" class="card-img-top" alt="Shuckle" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0213 Shuckle</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/214.svg" class="card-img-top" alt="Heracross" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0214 Heracross</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/215.svg" class="card-img-top" alt="Sneasel" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0215 Sneasel</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/216.svg" class="card-img-top" alt="Teddiursa" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0216 Teddiursa</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/217.svg" class="card-img-top" alt="Ursaring" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0217 Ursaring</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/218.svg" class="card-img-top" alt="Slugma" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0218 Slugma</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/219.svg" class="card-img-top" alt="Magcargo" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0219 Magcargo</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/220.svg" class="card-img-top" alt="Swinub" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0220 Swinub</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/221.svg" class="card-img-top" alt="Piloswine" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0221 Piloswine</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/222.svg" class="card-img-top" alt="Corsola" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0222 Corsola</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/223.svg" class="card-img-top" alt="Remoraid" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0223 Remoraid</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/224.svg" class="card-img-top" alt="Octillery" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0224 Octillery</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/225.svg" class="card-img-top" alt="Delibird" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0225 Delibird</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/226.svg" class="card-img-top" alt="Mantine" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0226 Mantine</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/227.svg" class="card-img-top" alt="Skarmory" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0227 Skarmory</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/228.svg" class="card-img-top" alt="Houndour" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0228 Houndour</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/229.svg" class="card-img-top" alt="Houndoom" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0229 Houndoom</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/230.svg" class="card-img-top" alt="Kingdra" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0230 Kingdra</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/231.svg" class="card-img-top" alt="Phanpy" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0231 Phanpy</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/232.svg" class="card-img-top" alt="Donphan" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0232 Donphan</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/233.svg" class="card-img-top" alt="Porygon2" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0233 Porygon2</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/234.svg" class="card-img-top" alt="Stantler" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0234 Stantler</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/235.svg" class="card-img-top" alt="Smeargle" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0235 Smeargle</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/236.svg" class="card-img-top" alt="Tyrogue" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0236 Tyrogue</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/237.svg" class="card-img-top" alt="Hitmontop" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0237 Hitmontop</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/238.svg" class="card-img-top" alt="Smoochum" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0238 Smoochum</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/239.svg" class="card-img-top" alt="Elekid" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0239 Elekid</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/240.svg" class="card-img-top" alt="Magby" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0240 Magby</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/241.svg" class="card-img-top" alt="Miltank" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0241 Miltank</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/242.svg" class="card-img-top" alt="Blissey" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0242 Blissey</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/243.svg" class="card-img-top" alt="Raikou" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0243 Raikou</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/244.svg" class="card-img-top" alt="Entei" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0244 Entei</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/245.svg" class="card-img-top" alt="Suicune" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0245 Suicune</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/246.svg" class="card-img-top" alt="Larvitar" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0246 Larvitar</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/247.svg" class="card-img-top" alt="Pupitar" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0247 Pupitar</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/248.svg" class="card-img-top" alt="Tyranitar" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0248 Tyranitar</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/249.svg" class="card-img-top" alt="Lugia" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0249 Lugia</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/250.svg" class="card-img-top" alt="Ho-Oh" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0250 Ho-Oh</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://repositorio.sbrauble.com/arquivos/up/pokedex/251.svg" class="card-img-top" alt="Celebi" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h5 class="card-title">#0251 Celebi</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div id="tipos" class="section">
+        <h2 class="text-center mt-5">Tipos de Pokémon</h2>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+            <div class="text-center">
+                <button class="btn btn-light" type="button" onclick="mostrarTipo('normal')">
+                    <img src="https://static.wikia.nocookie.net/pokemongo/images/f/fb/Normal.png/revision/latest/scale-to-width-down/35?cb=20161013132914" alt="Normal" style="width: 50px; height: 50px;">
+                </button>
+                <p>Normal</p>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-light" type="button" onclick="mostrarTipo('fogo')">
+                    <img src="https://static.wikia.nocookie.net/pokemon-go/images/3/30/Fire.png/revision/latest/scale-to-width-down/35?cb=20160721174921&path-prefix=pt-br" alt="Fogo" style="width: 50px; height: 50px;">
+                </button>
+                <p>Fogo</p>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-light" type="button" onclick="mostrarTipo('agua')">
+                    <img src="https://static.wikia.nocookie.net/pokemongo/images/9/9d/Water.png/revision/latest/scale-to-width-down/35?cb=20161013133222" alt="Água" style="width: 50px; height: 50px;">
+                </button>
+                <p>Água</p>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-light" type="button" onclick="mostrarTipo('grama')">
+                    <img src="https://static.wikia.nocookie.net/pokemongo/images/c/c5/Grass.png/revision/latest/scale-to-width-down/35?cb=20161013132855" alt="Planta" style="width: 50px; height: 50px;">
+                </button>
+                <p>Grama</p>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-light" type="button" onclick="mostrarTipo('veneno')">
+                    <img src="https://static.wikia.nocookie.net/pokemongo/images/0/05/Poison.png/revision/latest/scale-to-width-down/35?cb=20161013133014" alt="Veneno" style="width: 50px; height: 50px;">
+                </button>
+                    </button>
+                    <p>Veneno</p>
+                </div>
+            <div class="text-center">
+                <button class="btn btn-light" type="button" onclick="mostrarTipo('eletrico')">
+                    <img src="https://static.wikia.nocookie.net/pokemongo/images/2/2f/Electric.png/revision/latest/scale-to-width-down/35?cb=20161013132813" alt="Elétrico" style="width: 50px; height: 50px;">
+                </button>
+                <p>Elétrico</p>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-light" type="button" onclick="mostrarTipo('gelo')">
+                    <img src="https://static.wikia.nocookie.net/pokemongo/images/7/77/Ice.png/revision/latest/scale-to-width-down/35?cb=20161013132908" alt="Gelo" style="width: 50px; height: 50px;">
+                </button>
+                <p>Gelo</p>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-light" type="button" onclick="mostrarTipo('lutador')">
+                    <img src="https://static.wikia.nocookie.net/pokemongo/images/3/30/Fighting.png/revision/latest/scale-to-width-down/35?cb=20161013132827" alt="Lutador" style="width: 50px; height: 50px;">
+                </button>
+                <p>Lutador</p>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-light" type="button" onclick="mostrarTipo('psiquico')">
+                    <img src="https://static.wikia.nocookie.net/pokemongo/images/2/21/Psychic.png/revision/latest/scale-to-width-down/35?cb=20161013133006" alt="Psíquico" style="width: 50px; height: 50px;">
+                </button>
+                <p>Psíquico</p>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-light" type="button" onclick="mostrarTipo('inseto')">
+                    <img src="https://static.wikia.nocookie.net/pokemongo/images/7/7d/Bug.png/revision/latest/scale-to-width-down/35?cb=20161013132753" alt="Inseto" style="width: 50px; height: 50px;">
+                </button>
+                <p>Inseto</p>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-light" type="button" onclick="mostrarTipo('pedra')">
+                    <img src="https://static.wikia.nocookie.net/pokemongo/images/0/0b/Rock.png/revision/latest/scale-to-width-down/35?cb=20161013133022" alt="Pedra" style="width: 50px; height: 50px;">
+                </button>
+                <p>Pedra</p>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-light" type="button" onclick="mostrarTipo('fantasma')">
+                    <img src="https://static.wikia.nocookie.net/pokemongo/images/a/ab/Ghost.png/revision/latest/scale-to-width-down/35?cb=20161013132847" alt="Fantasma" style="width: 50px; height: 50px;">
+                </button>
+                <p>Fantasma</p>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-light" type="button" onclick="mostrarTipo('dragao')">
+                    <img src="https://static.wikia.nocookie.net/pokemongo/images/c/c7/Dragon.png/revision/latest/scale-to-width-down/35?cb=20161013132807" alt="Dragão" style="width: 50px; height: 50px;">
+                </button>
+                <p>Dragão</p>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-light" type="button" onclick="mostrarTipo('fada')">
+                    <img src="https://static.wikia.nocookie.net/pokemongo/images/4/43/Fairy.png/revision/latest/scale-to-width-down/35?cb=20161013132820" alt="Fada" style="width: 50px; height: 50px;">
+                </button>
+                <p>Fada</p>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-light" type="button" onclick="mostrarTipo('terra')">
+                    <img src="https://static.wikia.nocookie.net/pokemongo/images/8/8f/Ground.png/revision/latest/scale-to-width-down/35?cb=20161013132902" alt="Terra" style="width: 50px; height: 50px;">
+                </button>
+                <p>Terra</p>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-light" type="button" onclick="mostrarTipo('voador')">
+                    <img src="https://static.wikia.nocookie.net/pokemongo/images/7/7f/Flying.png/revision/latest/scale-to-width-down/35?cb=20161013132839" alt="Voador" style="width: 50px; height: 50px;">
+                </button>
+                <p>Voador</p>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-light" type="button" onclick="mostrarTipo('aço')">
+                    <img src="https://static.wikia.nocookie.net/pokemongo/images/c/c9/Steel.png/revision/latest/scale-to-width-down/35?cb=20161013133029" alt="Aço" style="width: 50px; height: 50px;">
+                </button>
+                <p>Aço</p>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-light" type="button" onclick="mostrarTipo('sombrio')">
+                    <img src="https://static.wikia.nocookie.net/pokemongo/images/0/0e/Dark.png/revision/latest/scale-to-width-down/35?cb=20161013132800" alt="Sombrio" style="width: 50px; height: 50px;">
+                </button>
+                <p>Sombrio</p>
+            
+            </div>
+        </div>
+        <div id="tipo-selecionado" class="text-center mt-3">
+            <!-- Aqui aparecerão os Pokémon por tipo -->
+        </div>
+    </div>
+
+    <div id="regioes" class="section">
+        <h2 class="text-center mt-5">Regiões</h2>
+        <div class="text-center">
+            <button class="btn" onclick="mostrarRegiao()">
+                <img src="https://www.lmcorp.com.br/arquivos/img/assets/tcg_2/images/regioes/johto.png" alt="Mapa de Johto" style="width: 100px; height: auto;">
+            </button>
+            <p class="mt-2">Johto</p> <!-- Nome da região embaixo do botão -->
+            <div id="regiao-selecionada" class="mt-3" style="display:none;">
+                <img src="https://i0.wp.com/gamerdungeon.com.br/wp-content/uploads/2014/10/Johto1.jpg?fit=600%2C411&ssl=1" alt="Mapa de Johto" class="img-fluid">
+                <p class="mt-3">A região de Johto (em japonês:ジョウト地方 Johto region ) é uma região do mundo Pokémon . Johto está localizada a oeste de Kanto , que juntas formam uma massa de terra conjunta que fica ao sul de Sinnoh e Sinjoh Ruins .
+
+                    Foi a segunda região da série principal a ser introduzida. Explorada pela primeira vez em Pokémon Gold e Silver , é o lar de 100 Pokémon adicionais que não estavam presentes nos jogos anteriores . É também o cenário de Pokémon Crystal , Pokémon HeartGold e Pokémon SoulSilver .
+                    
+                    Os jogadores começam sua jornada em New Bark Town , onde o Professor Elm oferece Chikorita , Cyndaquil ou Totodile aos treinadores Pokémon iniciantes .
+                    
+                    Os nomes em inglês da maioria das cidades em Johto são nomes de plantas ou coisas relacionadas a plantas.sss</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="treinador" class="section">
+        <h2 class="text-center mt-5">Treinador</h2>
+        <div class="card text-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrSa2TFo4wtFIKfAdmNlrbrDX-_328FjTsHA&s" class="card-img-top mx-auto" alt="Treinador" style="max-width: 150px; height: auto;"> <!-- Ajuste o tamanho aqui -->
+            <div class="card-body">
+                <h5 class="card-title">Nome do Treinador: Magrinho da xj</h5>
+                <p class="card-text">Pokémons Capturados: 1</p>
+                <p class="card-text">Pokémons Não Capturados: 100</p>
+                <p class="card-text">Pokémons Avistados: 101</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="cadastrar" class="section">
+        <h2 class="text-center mt-5 mb-5">Cadastrar Pokémon</h2>
+        <form>
+            <div class="mb-3">
+                <label for="nomePokemon" class="form-label">Nome do Pokémon</label>
+                <input type="text" class="form-control" id="nomePokemon" placeholder="Digite o nome do Pokémon">
+            </div>
+            <div class="mb-3">
+                <label for="tipoPokemon" class="form-label">Tipo do Pokémon</label>
+                <input type="text" class="form-control" id="tipoPokemon" placeholder="Digite o tipo do Pokémon">
+            </div>
+            <div class="mb-3">
+                <label for="numeroPokemon" class="form-label">Número do Pokémon</label>
+                <input type="number" class="form-control" id="numeroPokemon" placeholder="Digite o número do Pokémon">
+            </div>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+    </div>
+
+    <!-- Scripts -->
+<script>
+    // Função para mostrar a seção correta com base no link clicado
+    function showSection(sectionId) {
+        // Oculta todas as seções
+        const sections = document.querySelectorAll('.section');
+        sections.forEach(section => {
+            section.style.display = 'none';
+        });
+        // Exibe a seção selecionada
+        document.getElementById(sectionId).style.display = 'block';
+    }
+
+    // Mostra a seção "Início" por padrão
+    showSection('inicio');
+
+    // Dados dos Pokémon por tipo
+    const pokemonsPorTipo = {
+        normal: [
+            { nome: 'Sentret', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/161.svg' },
+            { nome: 'Furret', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/162.svg' },
+            { nome: 'Hoothoot', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/163.svg' },
+            { nome: 'Noctowl', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/164.svg' },
+            { nome: 'Igglybuff', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/174.svg' },
+            { nome: 'Aipom', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/190.svg' },
+            { nome: 'Girafarig', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/203.svg' },
+            { nome: 'Dunsparce', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/206.svg' },
+            { nome: 'Teddiursa', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/216.svg' },
+            { nome: 'Porygon2', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/233.svg' },
+            { nome: 'stantler', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/234.svg' },
+            { nome: 'Smeargle', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/235.svg' }, 
+            { nome: 'Miltank', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/241.svg' },
+            { nome: 'Blissey', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/242.svg' },
+            { nome: 'Ursaring', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/217.svg' },
+        ],
+        fogo: [
+            { nome: 'Cyndaquil', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/155.svg' },
+            { nome: 'Quilava', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/156.svg' },
+            { nome: 'Typhlosion', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/157.svg' },
+            { nome: 'Slugma', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/218.svg' },
+            { nome: 'Magcargo', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/219.svg' },
+            { nome: 'Houndour', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/228.svg' },
+            { nome: 'Houndoom', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/229.svg' },
+            { nome: 'Magby', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/240.svg' },
+            { nome: 'Entei', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/244.svg' },
+            { nome: 'Ho-oh', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/250.svg' },
+        ],
+        agua: [
+            { nome: 'Totodile', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/158.svg' },
+            { nome: 'Croconaw', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/159.svg' },
+            { nome: 'Feraligatr', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/160.svg' },
+            { nome: 'Chinchou', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/170.svg' },
+            { nome: 'Lanturn', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/171.svg' },
+            { nome: 'Marill', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/183.svg' },
+            { nome: 'Azumarill', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/184.svg' },
+            { nome: 'Politoed', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/186.svg' },
+            { nome: 'Wooper', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/194.svg' },
+            { nome: 'Quagsire', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/195.svg' },
+            { nome: 'Slowking', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/199.svg' },
+            { nome: 'Qwilfish', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/211.svg' },
+            { nome: 'Corsola', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/222.svg' },
+            { nome: 'Remoraid', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/223.svg' },
+            { nome: 'Octillery', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/224.svg' },
+            { nome: 'Mantine', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/226.svg' },
+            { nome: 'Kingdra', img:  'https://repositorio.sbrauble.com/arquivos/up/pokedex/230.svg'},
+            { nome: 'Suicune', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/245.svg' },
+        ],
+        grama: [
+            { nome: 'Chikorita', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/152.svg' },
+            { nome: 'Bayleef', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/153.svg' },
+            { nome: 'Meganium', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/154.svg' },
+            { nome: 'Bellossom', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/182.svg' },
+            { nome: 'Hoppip', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/187.svg' },
+            { nome: 'Skiploom', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/188.svg' },
+            { nome: 'Jumpluff', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/189.svg' },
+            { nome: 'Sunkern', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/191.svg' },
+            { nome: 'Sunflora', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/192.svg' },
+            { nome: 'Celebi', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/251.svg' },
+        ],
+        eletrico: [
+            { nome: 'Chinchou', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/170.svg' },
+            { nome: 'Lanturn', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/171.svg' },
+            { nome: 'Pichu', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/172.svg' },
+            { nome: 'Mareep', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/179.svg' },
+            { nome: 'Flaaffy', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/180.svg' },
+            { nome: 'Ampharos', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/181.svg' },
+            { nome: 'Elekid', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/239.svg' },
+            { nome: 'Raikou', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/243.svg' },
+        ],
+        gelo: [
+            { nome: 'Smoochum', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/238.svg' },
+            { nome: 'Sneasel', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/215.svg' },
+            { nome: 'Swinub', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/220.svg' },
+            { nome: 'Piloswine', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/221.svg' },
+            { nome: 'Delibird', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/225.svg' },
+        ],
+        lutador: [
+            { nome: 'Tyrogue', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/236.svg' },
+            { nome: 'heracross', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/214.svg' },
+            { nome: 'hitmontop', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/237.svg' },
+        ],
+        psiquico: [
+            { nome: 'Natu', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/177.svg' },
+            { nome: 'Xatu', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/178.svg' },
+            { nome: 'Espeon', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/196.svg' },
+            { nome: 'Slowking', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/199.svg' },
+            { nome: 'Unown', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/201.svg' },
+            { nome: 'Wobbuffet', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/202.svg' },
+            { nome: 'Girafarig', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/203.svg' },
+            { nome: 'Smoochum', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/238.svg' },
+            { nome: 'Lugia', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/249.svg' },
+            { nome: 'Celebi', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/251.svg' },
+        ],
+        inseto: [
+            { nome: 'Ledyba', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/165.svg' },
+            { nome: 'Ledian', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/166.svg' },
+            { nome: 'Spinarak', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/167.svg' },
+            { nome: 'Ariados', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/168.svg' },
+            { nome: 'Yanma', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/193.svg' },
+            { nome: 'Pineco', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/204.svg' },
+            { nome: 'Forretress', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/205.svg' },
+            { nome: 'Scizor', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/212.svg' },
+            { nome: 'Shuckle', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/213.svg' },
+            { nome: 'Heracross', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/214.svg' },
+    ],
+            veneno: [
+            { nome: 'Spinarak', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/167.svg' },
+            { nome: 'Ariados', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/168.svg' },
+            { nome: 'Crobat', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/169.svg' },
+            { nome: 'Qwilfish', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/211.svg' },
+        ],
+        pedra: [
+            { nome: 'Sudowoodo', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/185.svg' },
+            { nome: 'Shuckle', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/213.svg' },
+            { nome: 'Magcargo', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/219.svg' },
+            { nome: 'Corsola', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/222.svg' },
+            { nome: 'Larvitar', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/246.svg' },
+            { nome: 'Pupitar', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/247.svg' },
+            { nome: 'Tyranitar', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/248.svg' },
+        ],
+        fantasma: [
+            { nome: 'Misdreavus', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/200.svg' },
+        ],
+        dragao: [
+            { nome: 'Kingdra', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/230.svg' },
+        ],
+        fada: [
+            { nome: 'Cleffa', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/173.svg' },
+            { nome: 'Igglybuff', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/174.svg' },
+            { nome: 'Togepi', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/175.svg' },
+            { nome: 'Togetic', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/176.svg' },
+            { nome: 'Marill', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/183.svg' },
+            { nome: 'Azumarill', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/184.svg' },
+            { nome: 'Snubbull', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/209.svg' },
+            { nome: 'Granbull', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/210.svg' },
+        ],
+        terra: [
+            { nome: 'Wooper', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/194.svg' },
+            { nome: 'Quagsire', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/195.svg' },
+            { nome: 'Gligar', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/207.svg' },
+            { nome: 'Steelix', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/208.svg' },
+            { nome: 'Swinub', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/220.svg' },
+            { nome: 'Piloswine', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/221.svg' },
+            { nome: 'Phanpy', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/231.svg' },
+            { nome: 'Donphan', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/232.svg' },
+            { nome: 'Larvitar', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/246.svg' },
+            { nome: 'Pupitar', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/247.svg' },
+        ],
+        voador: [
+            { nome: 'Hoothoot', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/163.svg' },
+            { nome: 'Noctowl', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/164.svg' },
+            { nome: 'Ledyba', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/165.svg' },
+            { nome: 'Tedian', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/166.svg' },
+            { nome: 'Crobat', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/169.svg' },
+            { nome: 'Togetic', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/176.svg' },
+            { nome: 'Natu', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/177.svg' },
+            { nome: 'Xatu', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/178.svg' },
+            { nome: 'Hoppip', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/187.svg' },
+            { nome: 'Skiploom', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/188.svg' },
+            { nome: 'Jumpluff', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/189.svg' },
+            { nome: 'Yanma', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/193.svg' },
+            { nome: 'Murkrow', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/198.svg' },
+            { nome: 'Delibird', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/225.svg' },
+            { nome: 'Mantine', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/226.svg' },
+            { nome: 'Skarmory', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/227.svg' },
+            { nome: 'Lugia', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/249.svg' },
+            { nome: 'Ho-oh', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/250.svg' },
+            { nome: 'Gligar', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/207.svg' },
+        ],
+        aço: [
+            { nome: 'Forretress', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/205.svg' },
+            { nome: 'Steelix', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/208.svg' },
+            { nome: 'Scizor', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/212.svg' },
+            { nome: 'Skarmory', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/227.svg' },
+        ],
+        sombrio: [
+            { nome: 'Umbreon', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/197.svg' },
+            { nome: 'Murkrow', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/198.svg' },
+            { nome: 'Sneasel', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/215.svg' },
+            { nome: 'Houndour', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/228.svg' },
+            { nome: 'Houndoom', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/229.svg' },
+            { nome: 'Tyranitar', img: 'https://repositorio.sbrauble.com/arquivos/up/pokedex/248.svg' },
+    ],
+           
+    }
+
+    // Função para mostrar os Pokémon do tipo selecionado
+    function mostrarTipo(tipo) {
+        const pokemonLista = pokemonsPorTipo[tipo] || [];
+        const tipoSelecionadoDiv = document.getElementById('tipo-selecionado');
+        tipoSelecionadoDiv.innerHTML = ''; // Limpa o conteúdo anterior
+
+        if (pokemonLista.length > 0) {
+            pokemonLista.forEach(pokemon => {
+                const card = document.createElement('div');
+                card.className = 'card d-inline-block m-2';
+                card.style.width = '150px'; // Ajuste o tamanho do card
+
+                card.innerHTML = `
+                    <img src="${pokemon.img}" class="card-img-top" alt="${pokemon.nome}" style="width: 100%; height: auto;">
+                    <div class="card-body">
+                        <h5 class="card-title">${pokemon.nome}</h5>
+                    </div>
+                `;
+
+                tipoSelecionadoDiv.appendChild(card);
+            });
+        } else {
+            tipoSelecionadoDiv.innerHTML = 'Nenhum Pokémon encontrado para este tipo.';
+        }
+    }
+
+    function mostrarRegiao() {
+        document.getElementById('regiao-selecionada').style.display = 'block';
+    }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
